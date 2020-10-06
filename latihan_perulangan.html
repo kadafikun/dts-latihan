@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>latihan Js-1</title>
+</head>
+<body>
+<p> silahkan input nomor antara 1 sampai 10 </p>
+
+<input id ="numb">
+<button onclick="myFunction()" > Submit </button>
+<p id ="demo"> </p>
+</body>
+
+<script type="text/javascript">
+  function myFunction() {
+  var x = document.getElementById("numb").value;
+  var text;
+  var hasil = " ";
+  
+  if( x > 0 && x < 11){
+    text = "input yang anda masukkan benar";
+  } else {
+  text = " input yang anda masukkan salah"
+  }
+  
+  var i;
+  for (i = 0; i < 5; i++) {
+    hasil += text + "<br>";
+   }
+  
+  document.getElementById("demo").innerHTML = hasil;
+}
+</script>
+</html>
